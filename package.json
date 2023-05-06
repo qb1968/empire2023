@@ -28,6 +28,10 @@
     "prepare": "npm run build",
     "build": "babel src -d dist --extensions \".ts,.js\""
   },
+  "engines": {
+    "node": "16.19.1",
+    "npm": "8.19.3"
+  },
   
   "dependencies": {
     "@babel/preset-typescript": "^7.21.4",
