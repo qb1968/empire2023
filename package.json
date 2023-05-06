@@ -14,15 +14,13 @@
   ],
   "scripts": {
     "clean": "cross-env ./node_modules/.bin/rimraf dist",
-   
     "watch": "cross-env tsc --watch",
     "test": "cross-env jest",
     "seed": "cross-env medusa seed -f ./data/seed.json",
-   
     "start:custom": "cross-env npm run build && node --preserve-symlinks index.js",
     "dev": "cross-env npm run build && medusa develop",
     "build:admin": "cross-env medusa-admin build",
-     "serve": "medusa start",
+    "serve": "medusa start",
     "start": "medusa develop",
     "heroku-postbuild": "medusa migrations run",
     "prepare": "npm run build",
@@ -32,7 +30,6 @@
     "node": "16.19.1",
     "npm": "8.19.3"
   },
-  
   "dependencies": {
     "@babel/preset-typescript": "^7.21.4",
     "@medusajs/admin": "^4.0.0",
